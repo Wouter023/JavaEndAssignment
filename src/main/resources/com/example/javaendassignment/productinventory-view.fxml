@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Product inventory">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="inventoryProducts" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+            <TableColumn prefWidth="53.199995040893555" text="Stock">
+                <cellValueFactory>
+                    <PropertyValueFactory property="stock" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="121.60001373291016" text="Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="86.0" text="Category">
+                <cellValueFactory>
+                    <PropertyValueFactory property="category" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="65.60000610351562" text="Price">
+                <cellValueFactory>
+                    <PropertyValueFactory property="formattedPrice" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="199.99996948242188" text="Description">
+                <cellValueFactory>
+                    <PropertyValueFactory property="description" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <HBox prefHeight="36.0" prefWidth="560.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onAddButtonClick" text="Add product" />
+            <Button mnemonicParsing="false" onAction="#onEditButtonClick" text="Edit product" />
+            <Button mnemonicParsing="false" onAction="#onDeleteButtonClick" text="Delete product" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="errorLabel" textFill="RED" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

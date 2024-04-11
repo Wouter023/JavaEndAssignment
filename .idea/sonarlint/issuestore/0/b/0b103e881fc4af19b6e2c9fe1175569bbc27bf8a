@@ -1,0 +1,26 @@
+
+g	java:S112n"FDefine and throw a dedicated exception instead of using a generic one.(ó™ÎÂşÿÿÿÿ8íºê·1
+g	java:S112k"FDefine and throw a dedicated exception instead of using a generic one.(ãçıÿÿÿÿ8îºê·1
+b	java:S112v"FDefine and throw a dedicated exception instead of using a generic one.(óòºÜ8îºê·1
+g	java:S112{"FDefine and throw a dedicated exception instead of using a generic one.(—ñşÿÿÿÿ8îºê·1
+h	java:S112€"FDefine and throw a dedicated exception instead of using a generic one.(ôîª§şÿÿÿÿ8îºê·1
+g	java:S112s"FDefine and throw a dedicated exception instead of using a generic one.(äğØùÿÿÿÿ8îºê·1
+}
+java:S1488†"_Immediately return this expression instead of assigning it to the temporary variable "product".(„ÕÑ¶8ïºê·1
+E
+java:S5411^"(Use a primitive boolean expression here.(©Ø’Â8ğºê·1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÁïíÑúÿÿÿÿ8òºê·1
+y
+java:S1450%"WRemove the "category" field and declare it as a local variable in the relevant methods.(‘Ñ¤’üÿÿÿÿ8Á»ê·1
+|
+java:S1450'"ZRemove the "description" field and declare it as a local variable in the relevant methods.(ÇÓæâıÿÿÿÿ8Â»ê·1
+p
+java:S1450$"SRemove the "name" field and declare it as a local variable in the relevant methods.(Ë¥¼8Ã»ê·1
+v
+java:S1450&"TRemove the "price" field and declare it as a local variable in the relevant methods.(ËŒÑÎúÿÿÿÿ8Ã»ê·1
+v
+java:S1450#"TRemove the "stock" field and declare it as a local variable in the relevant methods.(±˜Óªùÿÿÿÿ8Ã»ê·1
+X
+java:S1117l";Rename "product" which hides the field declared at line 44.(Õ‹ßš8Ô»ê·1
+Y
+java:S1117†";Rename "product" which hides the field declared at line 44.(„ÕÑ¶8ä»ê·1

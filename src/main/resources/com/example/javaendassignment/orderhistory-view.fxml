@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Order history">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="orderHistory" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="Date/time" >
+                <cellValueFactory>
+                    <PropertyValueFactory property="date"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="75.0" text="Name" >
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="75.0" text="Total price" >
+                <cellValueFactory>
+                    <PropertyValueFactory property="totalPrice"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Label text="Ordered products">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="orderedProducts" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="Quantity">
+                <cellValueFactory>
+                    <PropertyValueFactory property="stock"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="75.0" text="Name" >
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="75.0" text="Category">
+                <cellValueFactory>
+                    <PropertyValueFactory property="category"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="75.0" text="Price">
+                <cellValueFactory>
+                    <PropertyValueFactory property="formattedPrice"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

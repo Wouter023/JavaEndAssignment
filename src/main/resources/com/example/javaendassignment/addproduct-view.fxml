@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label text="Select product">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <TableView fx:id="products" prefHeight="200.0" prefWidth="200.0">
+            <columns>
+                <TableColumn prefWidth="64.20001602172852" text="Stock">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="stock" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="107.4000244140625" text="Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="77.40000915527344" text="Category">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="category" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="76.80001831054688" text="Price">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="formattedPrice" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="192.0" text="Description">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="description" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Quantity" />
+                <TextField fx:id="quantityTextField" GridPane.columnIndex="1" />
+            </children>
+        </GridPane>
+        <HBox prefHeight="42.0" prefWidth="600.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#onAddButtonClick" text="Add to order" />
+                <Button mnemonicParsing="false" onAction="#onCancelButtonClick" text="Cancel" />
+            </children>
+        </HBox>
+      <Label fx:id="errorLabel" textFill="RED" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
